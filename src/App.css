@@ -1,0 +1,81 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #082032;
+}
+.blob {
+  position: fixed;
+  z-index: 0;
+  height: 900px;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+.title-container > img {
+  height: 100px;
+  margin-left: 20px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+}
+.title > div {
+  font-size: 48px;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
+}
+.paypal {
+  width: 460px;
+  z-index: 1;
+}
+.customized-button {
+  /* Main properties */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  /* THE MOST IMPORTANT THING */
+  pointer-events: none;
+  
+  /* Optional properties */
+  font-family: 'Open Sans', sans-serif;
+  height: 48px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #FF4C29;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 300ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.customized-button:hover {
+  background-color: #ff6648;
+}
+.customized-button > img {
+  width: 32px;
+  margin-left: 12px;
+}
